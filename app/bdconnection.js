@@ -1,8 +1,14 @@
 var mysql= require('mysql');
+var connection2= mysql.createConnection({
+host :'localhost',
+user :'root',
+password:'',
+database:'olfadb',
+port:80
+});
 
-
-var connection1= mysql.createConnection({
-    host :'mysql-118987-0.cloudclusters.net',
+var connection= mysql.createConnection({
+    host :'68.64.164.99',
     user :'admin',
     password:'r7HMwhfZ',
     database:'olfadb',
@@ -10,4 +16,5 @@ var connection1= mysql.createConnection({
     });
 
 
-module.exports={connection2}
+
+module.exports={connection}
